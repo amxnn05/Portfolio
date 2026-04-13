@@ -1,0 +1,36 @@
+.intro {
+    font-family: "Fira Code", monospace;
+    color: white;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.highlight {
+    color: rgb(139, 139, 139);
+    display: inline-block;
+    height: 1.5em;
+    width: 100px;
+    flex-direction: row;
+}
+
+.slider {
+    display: inline-block;
+    animation: slideUp 3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(8px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

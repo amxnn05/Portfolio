@@ -1,4 +1,7 @@
-export interface NavLink {
+export interface NavItems {
 	name: string;
-	path: string;
+	href: string;
+}
+export interface NavProps {
+	items: NavItems[];
 }
