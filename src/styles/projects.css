@@ -1,0 +1,43 @@
+.intro-section {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+.heading {
+    display: flex;
+    gap: 20px;
+}
+
+.intro-section h1 {
+    font-family: "JetBrains Mono", monospace;
+    font-size: clamp(40px, 8vw, 30px);
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+.scroll-container {
+    height: 500vh;
+    position: relative;
+}
+
+.sticky-wrapper {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    gap: 30px;
+}

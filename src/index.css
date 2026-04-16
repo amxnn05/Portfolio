@@ -138,5 +138,10 @@
 
   html {
     @apply font-sans;
+    scroll-snap-type: y mandatory;
+  }
+
+  .page {
+    scroll-snap-align: start;
   }
 }

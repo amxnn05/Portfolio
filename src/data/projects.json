@@ -1,0 +1,27 @@
+[
+    {
+        "project_name": "OpenRouter",
+        "project_desc": "something  [49657:49657:0416/192227.445434:ERROR:base/memory/shared_memory_switch.cc:289] Failed global descriptor lookup: 7 [49600:49647:0416/192227.472139:ERROR:chrome/browser/extensions/api/storage/managed_value_store_cache.cc:220] Failed to parse schema for extension blockjmkbacgjkknlgpkjjiijinjdanf with error: File does not exist: /opt/helium-browser-bin/resources/ublock/managed_storage.json [49600:49600:0416/192227.679587:ERROR:extensions/browser/api/web_request/extension_web_request_event_router.cc:1911] AddEventListener: 0x37e4008a1c40 extension_id: blockjmkbacgjkknlgpkjjiijinjdanf extension_name: uBlock Origin event_name: webRequest.onBeforeRequest sub_event_name: webRequest.onBeforeRequest/g1 render_process_id: 9 web_view_instance_id: 0 worker_thread_id: 0 service_worker_version_id: -1 [49600:49600:0416/192227.689014:ERROR:extensions/browser/api/web_request/extension_web_request_event_router.cc:1911] AddEventListener: 0x37e4008a1c40 extension_id: blockjmkbacgjkknlgpkjjiijinjdanf extension_name: uBlock Origin event_name: webRequest.onBeforeRequest sub_event_name: webRequest.onBeforeRequest/g2 render_process_id: 9 web_view_instance_id: 0 worker_thread_id: 0 service_worker_version_id: -1 [49600:49600:0416/192227.697972:FATAL:base/allocator/partition_alloc_support.cc:797] Detected dangling raw_ptr in unretained with id=0x000037e4004c55",
+        "teck_stack": "react, nodejs, sql"
+    },
+    {
+        "project_name": "OpenRouter",
+        "project_desc": "something ",
+        "teck_stack": "react, nodejs, sql"
+    },
+    {
+        "project_name": "OpenRouter",
+        "project_desc": "something ",
+        "teck_stack": "react, nodejs, sql"
+    },
+    {
+        "project_name": "OpenRouter",
+        "project_desc": "something ",
+        "teck_stack": "react, nodejs, sql"
+    },
+    {
+        "project_name": "OpenRouter",
+        "project_desc": "something ",
+        "teck_stack": "react, nodejs, sql"
+    }
+]

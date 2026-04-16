@@ -1,7 +1,7 @@
 .intro {
     font-family: "Fira Code", monospace;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -10,11 +10,20 @@
     gap: 8px;
 }
 
+.icons {
+    font-size: 15px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
 .highlight {
     color: rgb(139, 139, 139);
     display: inline-block;
     height: 1.5em;
-    width: 100px;
+    width: 150px;
     flex-direction: row;
 }
 
