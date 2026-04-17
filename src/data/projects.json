@@ -1,27 +1,31 @@
 [
     {
-        "project_name": "OpenRouter",
-        "project_desc": "something  [49657:49657:0416/192227.445434:ERROR:base/memory/shared_memory_switch.cc:289] Failed global descriptor lookup: 7 [49600:49647:0416/192227.472139:ERROR:chrome/browser/extensions/api/storage/managed_value_store_cache.cc:220] Failed to parse schema for extension blockjmkbacgjkknlgpkjjiijinjdanf with error: File does not exist: /opt/helium-browser-bin/resources/ublock/managed_storage.json [49600:49600:0416/192227.679587:ERROR:extensions/browser/api/web_request/extension_web_request_event_router.cc:1911] AddEventListener: 0x37e4008a1c40 extension_id: blockjmkbacgjkknlgpkjjiijinjdanf extension_name: uBlock Origin event_name: webRequest.onBeforeRequest sub_event_name: webRequest.onBeforeRequest/g1 render_process_id: 9 web_view_instance_id: 0 worker_thread_id: 0 service_worker_version_id: -1 [49600:49600:0416/192227.689014:ERROR:extensions/browser/api/web_request/extension_web_request_event_router.cc:1911] AddEventListener: 0x37e4008a1c40 extension_id: blockjmkbacgjkknlgpkjjiijinjdanf extension_name: uBlock Origin event_name: webRequest.onBeforeRequest sub_event_name: webRequest.onBeforeRequest/g2 render_process_id: 9 web_view_instance_id: 0 worker_thread_id: 0 service_worker_version_id: -1 [49600:49600:0416/192227.697972:FATAL:base/allocator/partition_alloc_support.cc:797] Detected dangling raw_ptr in unretained with id=0x000037e4004c55",
-        "teck_stack": "react, nodejs, sql"
+        "project_name": "Video Chat Application",
+        "project_desc": [
+            "Developed a full-stack random video chat web application using React, TypeScript, Node.js, and WebRTC, enabling real-time peer-to-peer video and audio streaming with minimal latency."
+        ],
+        "icon": "https://i.pinimg.com/1200x/b4/09/b4/b409b442a6422c9962a5374f939080b7.jpg",
+        "sub": "Full Stack Application",
+        "teck_stack": "React, TypeScript, Node.js, WebRTC, Socket.IO, NSFW.js",
+        "github": "https://github.com/amxnn05/VIdeo-chat",
+        "live": "https://github.com/amxnn05/VIdeo-chat"
     },
     {
         "project_name": "OpenRouter",
         "project_desc": "something ",
-        "teck_stack": "react, nodejs, sql"
+        "sub": "Full Stack Application",
+        "icon": "https://i.pinimg.com/1200x/b4/09/b4/b409b442a6422c9962a5374f939080b7.jpg",
+        "teck_stack": "react, nodejs, sql",
+        "github": "https://github.com/amxnn05/VIdeo-chat",
+        "live": "something"
     },
     {
-        "project_name": "OpenRouter",
-        "project_desc": "something ",
-        "teck_stack": "react, nodejs, sql"
-    },
-    {
-        "project_name": "OpenRouter",
-        "project_desc": "something ",
-        "teck_stack": "react, nodejs, sql"
-    },
-    {
-        "project_name": "OpenRouter",
-        "project_desc": "something ",
-        "teck_stack": "react, nodejs, sql"
+        "project_name": "SimplyExim",
+        "project_desc": "A modern, responsive full-stack website for Simply Exim, showcasing premium agricultural products for global export.",
+        "sub": "React Application / Freelance",
+        "icon": "https://simplyexim.com/assets/logo.png",
+        "teck_stack": "react, javascript",
+        "github": "https://github.com/amxnn05/SimplyExim",
+        "live": "https://simplyexim.com/"
     }
 ]

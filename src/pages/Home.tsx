@@ -34,7 +34,11 @@ const Home = () => {
                     <a href="https://github.com/amxnn05" className="hover:scale-110 transition" target="_blank" rel="noopener noreferrer">   {<FaGithub />} </a>
                     <a href="https://www.linkedin.com/in/amxnn05/" className="hover:scale-110 transition" target="_blank" rel="noopener noreferrer">  {<FaLinkedin />} </a>
                     <a href="mailto:amanbora9759345011@gmail.com" className="hover:scale-110 transition" target="_blank"> {<MdEmail />} </a>
+                    <p>|</p>
+                    <a href="/resume.pdf" className="hover:scale-105 transition" target="_blank">Resume</a>
                 </div>
+
+
             </motion.div >
 
 

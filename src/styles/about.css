@@ -1,0 +1,48 @@
+.about {
+    padding-top: 100px;
+    color: white;
+    font-size: medium;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+    height: 50vh;
+    gap: 20px;
+}
+
+.disc {
+    font-size: small;
+    min-width: 100px;
+
+}
+
+.skills {
+    font-size: 13px;
+    padding: 0 clamp(20px, 50vw, 450px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+
+.label {
+    font-size: 13px;
+}
+
+.value {
+    font-size: small;
+    color: #9ca3af;
+    /* grey */
+}
+
+/* height: 50vh;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+text-align: center;
+padding-bottom: 40px; */

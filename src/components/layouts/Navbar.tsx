@@ -4,13 +4,13 @@ import "../../styles/nav.css"
 const Navbar = ({ items }: NavProps) => {
 	const [first, ...rest] = items;
 	return (
-		<nav className="nav">
-			<div className="nav-logo">
+		<nav className="nav" >
+			<div className="nav-logo hover:scale-105 transition" >
 				<Link to={first.href}> {first.name} </Link>
 			</div>
-			<div className="nav-left">
+			<div className="nav-left" >
 				{rest.map((item, i) => (
-					<Link key={i} to={item.href}>
+					<Link className="hover:scale-105 transition" key={i} to={item.href}>
 						{item.name}
 					</Link>
 				))}

@@ -10,14 +10,19 @@
 
 
 .heading {
+    color: rgb(141, 141, 141);
+    font-size: small;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
 .intro-section h1 {
     font-family: "JetBrains Mono", monospace;
-    font-size: clamp(40px, 8vw, 30px);
-    font-weight: bold;
+    font-size: clamp(20px, 8vw, 15px);
+    /* font-weight: bold; */
     color: #ffffff;
     margin: 0;
 }

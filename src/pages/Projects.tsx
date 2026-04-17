@@ -1,16 +1,8 @@
 import data from "../data/projects.json";
 import '../styles/projects.css';
-import { Folder } from "lucide-react"
-import {
-    Card,
-    CardAction,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import ProjectCard from "../components/layouts/ProjectCard"
 const Project = () => {
     const containerRef = useRef(null);
     const ref = useRef(null);
@@ -39,12 +31,14 @@ const Project = () => {
                     animate={{ opacity: 1, }}
                     transition={{ duration: 2, delay: 0.2, ease: "easeInOut" }}
                     className="heading" >
-                    <Folder color="white" size={53} />
+
                     <motion.h1
                         initial={{ opacity: 0, }}
                         animate={{ opacity: 1, }}
                         transition={{ duration: 2, delay: 0.2, ease: "easeInOut" }}
-                        className="impact"> Projects</motion.h1>
+                        className="impact"> PROJECTS</motion.h1>
+                    <motion.p className="sub">Things I’ve built while learning, experimenting, and solving real problems.</motion.p>
+
                 </motion.div>
             </motion.section >
             <motion.div
@@ -60,18 +54,16 @@ const Project = () => {
 
                             className="gallery" style={{ x }}>
                             {data.map((project, i) => (
-                                <Card key={i} className="shrink-0 min-w-[400px] min-h-[500px] text-white bg bg-transparent ">
-                                    <CardHeader>
-                                        <CardTitle> {project.project_name} </CardTitle>
-                                        <CardDescription> {project.project_desc} </CardDescription>
-                                        <CardAction>Card Action</CardAction>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <p>{project.teck_stack}</p>
-                                    </CardContent>
 
-                                </Card>
-
+                                <ProjectCard key={i}
+                                    title={project.project_name}
+                                    desc={project.project_desc}
+                                    sub={project.sub}
+                                    stacks={project.teck_stack}
+                                    icon={project.icon}
+                                    github={project.github}
+                                    live={project.live}
+                                />
 
                             ))
                             }
