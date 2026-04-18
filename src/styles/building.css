@@ -9,3 +9,10 @@
     padding-left: 20px;
     padding-top: 10px;
 }
+
+@media (max-width: 600px) {
+    .card {
+        width: calc(100vw - 40px);
+        max-width: 400px;
+    }
+}

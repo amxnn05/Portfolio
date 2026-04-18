@@ -27,3 +27,16 @@
     display: flex;
     gap: 20px;
 }
+
+@media (max-width: 600px) {
+    .nav {
+        padding: 0 16px;
+        gap: 12px;
+    }
+
+    .nav-left {
+        position: static;
+        transform: none;
+        gap: 14px;
+    }
+}

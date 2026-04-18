@@ -10,7 +10,7 @@ interface projectProps {
 }
 const ProjectCard = (props: projectProps) => {
     return (
-        <div className="w-[400px] h-[500px] bg-transparent-900 rounded-xl p-5 text-white flex flex-col justify-between">
+        <div className="w-[400px] max-w-[calc(100vw-40px)] h-[500px] bg-transparent-900 rounded-xl p-5 text-white flex flex-col justify-between">
 
             <div>
                 <div className="flex items-center gap-3">

@@ -43,3 +43,9 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 600px) {
+    .intro {
+        padding: 0 20px;
+    }
+}

@@ -46,3 +46,14 @@ justify-content: flex-end;
 align-items: center;
 text-align: center;
 padding-bottom: 40px; */
+
+@media (max-width: 600px) {
+    .about {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .skills {
+        padding: 0 20px;
+    }
+}

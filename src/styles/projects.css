@@ -46,3 +46,14 @@
     display: flex;
     gap: 30px;
 }
+
+@media (max-width: 600px) {
+    .intro-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .gallery {
+        gap: 16px;
+    }
+}

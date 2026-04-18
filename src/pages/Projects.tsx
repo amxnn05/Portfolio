@@ -16,9 +16,15 @@ const Project = () => {
         target: ref,
         offset: ["start start", "end start"]
     });
-    const centerOffset = (window.innerWidth / 2) - (ITEM_WIDTH / 2);
-    const totalDistance = (data.length - 1) * (ITEM_WIDTH + GAP)
-    const x = useTransform(mainScroll, [0, 1], [centerOffset, -totalDistance]);
+    const x = useTransform(mainScroll, (latest) => {
+        const w = window.innerWidth;
+        const isMobile = w <= 600;
+        const itemW = isMobile ? Math.min(ITEM_WIDTH, w - 40) : ITEM_WIDTH;
+        const gap = isMobile ? 16 : GAP;
+        const centerOffset = (w / 2) - (itemW / 2);
+        const totalDistance = (data.length - 1) * (itemW + gap);
+        return centerOffset + latest * (-totalDistance - centerOffset);
+    });
     const opacity = useTransform(projectScroll, [0.1, 1], [1, 0]);
     return (
         <>
