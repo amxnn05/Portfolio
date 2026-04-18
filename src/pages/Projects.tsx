@@ -47,9 +47,9 @@ const Project = () => {
 
                 </motion.div>
             </motion.section >
-            <motion.div
 
-            >
+            {/* Desktop: horizontal scroll gallery */}
+            <motion.div className="desktop-only">
                 <div ref={containerRef} className="scroll-container">
                     <div className="sticky-wrapper">
                         <motion.div
@@ -75,6 +75,28 @@ const Project = () => {
                             }
                         </motion.div>
                     </div>
+                </div>
+            </motion.div>
+
+            {/* Mobile: vertical stack */}
+            <motion.div
+                className="mobile-only"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 1, ease: "easeInOut" }}
+            >
+                <div className="gallery-mobile">
+                    {data.map((project, i) => (
+                        <ProjectCard key={i}
+                            title={project.project_name}
+                            desc={project.project_desc}
+                            sub={project.sub}
+                            stacks={project.teck_stack}
+                            icon={project.icon}
+                            github={project.github}
+                            live={project.live}
+                        />
+                    ))}
                 </div>
             </motion.div>
         </>
