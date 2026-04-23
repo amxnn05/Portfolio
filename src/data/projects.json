@@ -6,7 +6,7 @@
         ],
         "icon": "https://i.pinimg.com/1200x/b4/09/b4/b409b442a6422c9962a5374f939080b7.jpg",
         "sub": "Full Stack Application",
-        "teck_stack": "React, TypeScript, Node.js, WebRTC, Socket.IO, NSFW.js",
+        "teck_stack": "Full Stack Application",
         "github": "https://github.com/amxnn05/VIdeo-chat",
         "live": "https://github.com/amxnn05/VIdeo-chat"
     },
@@ -15,7 +15,7 @@
         "project_desc": "Developing a custom AI routing gateway that unifies access to multiple LLM providers through a single API. Designed a routing engine to dynamically select models based on request complexity, cost, and performance, with built-in failover handling to ensure reliability.",
         "sub": "Full Stack Application",
         "icon": "https://i.pinimg.com/originals/bd/e3/e1/bde3e16f060043de9e2ebc624fb64049.gif",
-        "teck_stack": "React, Express, TypeScript, Node.js ",
+        "teck_stack": "Full Stack AI Application ",
         "github": "https://github.com/amxnn05/Ai-Router",
         "live": "https://github.com/amxnn05/Ai-Router"
     },
@@ -24,7 +24,7 @@
         "project_desc": "A modern, responsive full-stack website for Simply Exim, showcasing premium agricultural products for global export.",
         "sub": "React Application / Freelance",
         "icon": "https://simplyexim.com/assets/logo.png",
-        "teck_stack": "react, javascript",
+        "teck_stack": "React Application/Freelance",
         "github": "https://github.com/amxnn05/SimplyExim",
         "live": "https://simplyexim.com/"
     }
