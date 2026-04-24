@@ -130,7 +130,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 transition-colors duration-1000 ease-in-out;
   }
 
   :root {
@@ -142,7 +142,7 @@
   }
 
   body {
-    @apply text-[#2a2825] bg-[#fdf6e3] dark:bg-[#000000] dark:text-[#e8e6e3];
+    @apply text-[#2a2825] bg-[#fdf6e3] dark:bg-[#111216] dark:text-[#e0e2e8];
     background-image: var(--bg-dots);
     background-attachment: fixed;
     font-family: 'Fira Code', monospace;
