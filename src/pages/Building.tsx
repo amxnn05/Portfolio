@@ -8,7 +8,7 @@ const Building = () => {
                   <div className="flex flex-col gap-8 text-[13px] text-black/80 dark:text-white/80">
                         <div className="flex flex-col gap-2">
                               <span className="font-semibold text-black/90 dark:text-white/90 underline underline-offset-4 decoration-black/20 dark:decoration-white/20 w-fit">
-                                    Ai Router
+                                    Genin Ai
                               </span>
                               <p className="leading-relaxed">
                                     Building a AI-powered search engine that
