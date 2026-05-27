@@ -2,6 +2,6 @@
     "lang": "JavaScript, TypeScript, Python, C++",
     "tools": "Git, GitHub, Docker, Vercel, Linux/Unix",
     "database": "MongoDB",
-    "frontend": "HTML, CSS, JavaScript, TypeScript, React",
+    "frontend": "HTML, CSS, JavaScript, TypeScript, React, NextJS",
     "backend": "Node.js, Express.js"
 }
