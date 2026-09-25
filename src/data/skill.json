@@ -1,7 +1,5 @@
 {
-	"lang": "JavaScript, TypeScript, Python, C++, Rust",
-	"tools": "Git, GitHub, Docker, Prisma, Vercel, Linux/Unix",
-	"database": "MongoDB, postgresql",
-	"frontend": "React, NextJS",
-	"backend": "Node.js, Express.js"
+	"lang": "TypeScript, Python, C++, Rust, Next.Js",
+	"tools": "Git, GitHub, Docker, Prisma, AWS , Linux/Unix",
+	"backend": "HTTP, express, MongoDB, postgreSQL"
 }
