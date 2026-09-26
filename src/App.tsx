@@ -7,7 +7,14 @@ import { useState, useEffect } from "react";
 import MouseTrail from "./components/MouseTrail";
 
 export default function App() {
-	const [isDark, setIsDark] = useState(false);
+	const [isDark, setIsDark] = useState(() => {
+		if (typeof window !== "undefined") {
+			const storedTheme = localStorage.getItem("theme");
+			if (storedTheme) return storedTheme === "dark";
+			return window.matchMedia("(prefers-color-scheme: dark)").matches;
+		}
+		return false;
+	});
 	const [isCopied, setIsCopied] = useState(false);
 
 	const handleCopyEmail = () => {
@@ -44,14 +51,14 @@ export default function App() {
 	return (
 		<div className="min-h-screen w-full selection:bg-black/10 dark:selection:bg-white/10 flex justify-center relative pb-32">
 			<MouseTrail />
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ duration: 0.8, ease: "easeOut" }}
-				className="w-full max-w-2xl flex flex-col relative px-6 md:px-8 pt-24 md:pt-32 text-[13px] md:text-[14px] leading-relaxed text-black/80 dark:text-white/80"
-			>
+			<div className="w-full max-w-2xl flex flex-col relative px-6 md:px-8 pt-24 md:pt-32 text-[13px] md:text-[14px] leading-relaxed text-black/80 dark:text-white/80">
 				{/* Header Section */}
-				<header className="flex justify-between items-start w-full relative">
+				<motion.header 
+					initial={{ opacity: 0, y: -20, scale: 0.95 }}
+					animate={{ opacity: 1, y: 0, scale: 1 }}
+					transition={{ duration: 0.8, ease: "easeOut" }}
+					className="flex justify-between items-start w-full relative"
+				>
 					<div className="flex flex-col gap-4">
 						<div className="flex flex-col gap-1">
 							<span className="font-semibold text-3xl tracking-wide text-black/91 dark:text-white/90">
@@ -118,25 +125,54 @@ export default function App() {
 							{isDark ? "switch to light" : "switch to dark"}
 						</span>
 					</button>
-				</header>
+				</motion.header>
 
 				<main className="flex flex-col gap-24 mt-8">
-					<section id="home">
+					<motion.section 
+						id="home"
+						initial={{ opacity: 0, y: -20, scale: 0.95 }}
+						animate={{ opacity: 1, y: 0, scale: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
+					>
 						<Home />
-					</section>
-					<section id="past">
+					</motion.section>
+					<motion.section 
+						id="past"
+						initial={{ opacity: 0, y: -30 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true, margin: "-50px" }}
+						transition={{ duration: 0.7, ease: "easeOut" }}
+					>
 						<About />
-					</section>
-					<section id="projects">
+					</motion.section>
+					<motion.section 
+						id="projects"
+						initial={{ opacity: 0, y: -30 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true, margin: "-50px" }}
+						transition={{ duration: 0.7, ease: "easeOut" }}
+					>
 						<Project />
-					</section>
-					<section id="building">
+					</motion.section>
+					<motion.section 
+						id="building"
+						initial={{ opacity: 0, y: -30 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true, margin: "-50px" }}
+						transition={{ duration: 0.7, ease: "easeOut" }}
+					>
 						<Building />
-					</section>
+					</motion.section>
 				</main>
 
 				{/* Contact Footer */}
-				<footer className="mt-16 pt-8 flex flex-col gap-4 pb-20">
+				<motion.footer 
+					initial={{ opacity: 0, y: -30 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: true, margin: "-50px" }}
+					transition={{ duration: 0.7, ease: "easeOut" }}
+					className="mt-16 pt-8 flex flex-col gap-4 pb-20"
+				>
 					<h2 className="text-black/80 dark:text-white/80 font-bold">
 						links
 					</h2>
@@ -227,8 +263,8 @@ export default function App() {
 							resume
 						</a>
 					</div>
-				</footer>
-			</motion.div>
+				</motion.footer>
+			</div>
 
 			{/* Bottom Blur Fade Effect */}
 			<div className="pointer-events-none fixed bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#fdf6e3] to-transparent dark:from-black z-50"></div>

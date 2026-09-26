@@ -141,4 +141,8 @@
   html {
     @apply scroll-smooth;
   }
+
+  .no-transitions * {
+    transition: none !important;
+  }
 }
