@@ -54,7 +54,7 @@ export default function App() {
 			<div className="w-full max-w-2xl flex flex-col relative px-6 md:px-8 pt-24 md:pt-32 text-[13px] md:text-[14px] leading-relaxed text-black/80 dark:text-white/80">
 				{/* Header Section */}
 				<motion.header 
-					initial={{ opacity: 0, y: -20, scale: 0.95 }}
+					initial={{ opacity: 0, y: 20, scale: 0.95 }}
 					animate={{ opacity: 1, y: 0, scale: 1 }}
 					transition={{ duration: 0.8, ease: "easeOut" }}
 					className="flex justify-between items-start w-full relative"
@@ -130,7 +130,7 @@ export default function App() {
 				<main className="flex flex-col gap-24 mt-8">
 					<motion.section 
 						id="home"
-						initial={{ opacity: 0, y: -20, scale: 0.95 }}
+						initial={{ opacity: 0, y: 20, scale: 0.95 }}
 						animate={{ opacity: 1, y: 0, scale: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
 					>
@@ -138,7 +138,7 @@ export default function App() {
 					</motion.section>
 					<motion.section 
 						id="past"
-						initial={{ opacity: 0, y: -30 }}
+						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true, margin: "-50px" }}
 						transition={{ duration: 0.7, ease: "easeOut" }}
@@ -147,7 +147,7 @@ export default function App() {
 					</motion.section>
 					<motion.section 
 						id="projects"
-						initial={{ opacity: 0, y: -30 }}
+						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true, margin: "-50px" }}
 						transition={{ duration: 0.7, ease: "easeOut" }}
@@ -156,7 +156,7 @@ export default function App() {
 					</motion.section>
 					<motion.section 
 						id="building"
-						initial={{ opacity: 0, y: -30 }}
+						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true, margin: "-50px" }}
 						transition={{ duration: 0.7, ease: "easeOut" }}
@@ -167,7 +167,7 @@ export default function App() {
 
 				{/* Contact Footer */}
 				<motion.footer 
-					initial={{ opacity: 0, y: -30 }}
+					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true, margin: "-50px" }}
 					transition={{ duration: 0.7, ease: "easeOut" }}
