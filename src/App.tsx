@@ -53,7 +53,7 @@ export default function App() {
 			<MouseTrail />
 			<div className="w-full max-w-2xl flex flex-col relative px-6 md:px-8 pt-24 md:pt-32 text-[13px] md:text-[14px] leading-relaxed text-black/80 dark:text-white/80">
 				{/* Header Section */}
-				<motion.header 
+				<motion.header
 					initial={{ opacity: 0, y: 20, scale: 0.95 }}
 					animate={{ opacity: 1, y: 0, scale: 1 }}
 					transition={{ duration: 0.8, ease: "easeOut" }}
@@ -61,9 +61,9 @@ export default function App() {
 				>
 					<div className="flex flex-col gap-4">
 						<div className="flex flex-col gap-1">
-							<span className="font-semibold text-3xl tracking-wide text-black/91 dark:text-white/90">
-								Hii, I'm aman bora
-							</span>
+							<h2 className="text-black/80 dark:text-white/80 font-bold text-xl md:text-2xl">
+								Hii, I'm aman
+							</h2>
 							<button
 								onClick={handleCopyEmail}
 								className="flex items-center gap-1.5 text-[13px] text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors cursor-pointer w-fit group"
@@ -128,15 +128,19 @@ export default function App() {
 				</motion.header>
 
 				<main className="flex flex-col gap-24 mt-8">
-					<motion.section 
+					<motion.section
 						id="home"
 						initial={{ opacity: 0, y: 20, scale: 0.95 }}
 						animate={{ opacity: 1, y: 0, scale: 1 }}
-						transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
+						transition={{
+							duration: 0.8,
+							ease: "easeOut",
+							delay: 0.15,
+						}}
 					>
 						<Home />
 					</motion.section>
-					<motion.section 
+					<motion.section
 						id="past"
 						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -145,7 +149,7 @@ export default function App() {
 					>
 						<About />
 					</motion.section>
-					<motion.section 
+					<motion.section
 						id="projects"
 						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -154,7 +158,7 @@ export default function App() {
 					>
 						<Project />
 					</motion.section>
-					<motion.section 
+					<motion.section
 						id="building"
 						initial={{ opacity: 0, y: 30 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -166,7 +170,7 @@ export default function App() {
 				</main>
 
 				{/* Contact Footer */}
-				<motion.footer 
+				<motion.footer
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true, margin: "-50px" }}
@@ -267,7 +271,7 @@ export default function App() {
 			</div>
 
 			{/* Bottom Blur Fade Effect */}
-			<div className="pointer-events-none fixed bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#fdf6e3] to-transparent dark:from-black z-50"></div>
+			<div className="pointer-events-none fixed bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#fdf6e3] to-transparent dark:from-[hsl(210,11.1%,3.53%)] z-50"></div>
 		</div>
 	);
 }

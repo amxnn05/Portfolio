@@ -134,7 +134,7 @@
   }
 
   body {
-    @apply text-[#2a2825] bg-[#fdf6e3] dark:bg-black dark:text-[#e0e2e8];
+    @apply text-[#2a2825] bg-[#fdf6e3] dark:bg-[hsl(210,11.1%,3.53%)] dark:text-[#e0e2e8];
     font-family: 'Fira Code', monospace;
   }
 
